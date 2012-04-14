@@ -1,3 +1,12 @@
+libxdmcp (1:1.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+  * Don't require (fake)root for debian/rules clean.
+  * Exclude .db files from dh_install.
+  * Drop workaround from debian/rules for an upstream bug fixed in March 2006.
+
+ -- Julien Cristau <jcristau@debian.org>  Sat, 14 Apr 2012 18:37:46 +0200
+
 libxdmcp (1:1.1.0-4) unstable; urgency=low
 
   * Drop /usr/share/doc/libxdmcp-dev/xdmcp.html from the package; the
