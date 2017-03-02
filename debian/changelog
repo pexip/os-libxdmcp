@@ -1,3 +1,37 @@
+libxdmcp (1:1.1.2-3) unstable; urgency=medium
+
+  * Merge 1:1.1.2-1.1 NMU, lost by mistake in 1:1.1.2-2.
+
+ -- Julien Cristau <jcristau@debian.org>  Thu, 02 Mar 2017 15:27:19 +0100
+
+libxdmcp (1:1.1.2-2) unstable; urgency=medium
+
+  * CVE-2017-2625: Build-depend on libbsd-dev for arc4random_buf.
+    Closes: #856399.
+
+ -- Emilio Pozuelo Monfort <pochu@debian.org>  Tue, 28 Feb 2017 22:47:22 +0100
+
+libxdmcp (1:1.1.2-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Remove &fullrelver; usage from doc/xdmcp.xml to make libxdmcp-dev M-A:same
+    safe when built with different versions of xorg-sgml-doctools. (closes:
+    #761628)
+  * Make usr/share/doc/libxdmcp-dev/xdmcp.txt.gz reproducible in the presence
+    of locales by exporting LC_ALL (closes: #783223).
+
+ -- Helmut Grohne <helmut@subdivi.de>  Wed, 11 Nov 2015 20:09:26 +0100
+
+libxdmcp (1:1.1.2-1) unstable; urgency=medium
+
+  * Let uscan verify tarball signatures.
+  * New upstream release.
+  * Switch to dh with the autoreconf and quilt addons.
+  * Disable silent build rules.
+  * Remove Cyril from Uploaders.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 26 Apr 2015 17:16:08 +0200
+
 libxdmcp (1:1.1.1-1) unstable; urgency=low
 
   * New upstream release.
