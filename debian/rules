@@ -43,7 +43,6 @@ build-stamp:
 	dh_testdir
 	autoreconf -vfi
 	mkdir -p build
-	cp Wraphelp.c build #Ick... to allow des building
 	cd build && \
 	../configure --prefix=/usr --mandir=\$${prefix}/share/man \
 	             --infodir=\$${prefix}/share/info $(confflags) \
@@ -55,7 +54,6 @@ build-stamp:
 
 clean:
 	dh_testdir
-	dh_testroot
 	rm -f build-stamp
 
 	rm -f config.cache config.log config.status
@@ -84,7 +82,7 @@ binary-arch: build install
 	dh_testroot
 
 	dh_installdocs
-	dh_install --sourcedir=debian/tmp --fail-missing --exclude=libXdmcp.la --exclude .html --exclude .css
+	dh_install --sourcedir=debian/tmp --fail-missing --exclude=libXdmcp.la --exclude .html --exclude .css --exclude .db
 	dh_installchangelogs ChangeLog
 	dh_link
 	dh_strip -p$(PACKAGE) --dbg-package=$(PACKAGE)-dbg
