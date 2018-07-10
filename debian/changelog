@@ -1,3 +1,9 @@
+libxdmcp (1:1.1.2-3pexip1) pexip; urgency=medium
+
+  * Migrate to Stretch
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 10 Jul 2018 11:25:00 +0000
+
 libxdmcp (1:1.1.2-3) unstable; urgency=medium
 
   * Merge 1:1.1.2-1.1 NMU, lost by mistake in 1:1.1.2-2.
