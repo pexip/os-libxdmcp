@@ -20,7 +20,7 @@ Build-Depends:
 Standards-Version: 3.9.2
 Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/libxdmcp
 Vcs-Browser: http://git.debian.org/?p=pkg-xorg/lib/libxdmcp.git
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bullseye
 
 Package: libxdmcp6
 Architecture: any
