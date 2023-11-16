@@ -1,3 +1,9 @@
+libxdmcp (1:1.1.2-3pexip6) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 10:08:59 +0000
+
 libxdmcp (1:1.1.2-3pexip5) pexip-bullseye; urgency=medium
 
   * Bullseye rebuild for ARM64 inclusion
