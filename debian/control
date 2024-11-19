@@ -7,7 +7,7 @@ Build-Depends:
  dh-autoreconf,
  quilt,
  pkg-config,
- x11proto-core-dev,
+ x11proto-dev,
  automake,
  libtool,
  libbsd-dev,
@@ -17,8 +17,8 @@ Build-Depends:
  xorg-sgml-doctools (>= 1:1.5),
  w3m,
 Standards-Version: 3.9.2
-Vcs-Git: git://git.debian.org/git/pkg-xorg/lib/libxdmcp
-Vcs-Browser: http://git.debian.org/?p=pkg-xorg/lib/libxdmcp.git
+Vcs-Git: https://salsa.debian.org/xorg-team/lib/libxdmcp.git
+Vcs-Browser: https://salsa.debian.org/xorg-team/lib/libxdmcp
 
 Package: libxdmcp6
 Architecture: any
@@ -34,7 +34,7 @@ Description: X11 Display Manager Control Protocol library
  <URL:http://www.X.org>
  .
  This module can be found at
- git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
+ https://gitlab.freedesktop.org/xorg/lib/libXdmcp
 
 Package: libxdmcp6-udeb
 XC-Package-Type: udeb
@@ -44,30 +44,11 @@ Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: X11 Display Manager Control Protocol library
  This is a udeb, or a microdeb, for the debian-installer.
 
-Package: libxdmcp6-dbg
-Architecture: any
-Section: debug
-Priority: extra
-Depends: ${shlibs:Depends}, ${misc:Depends}, libxdmcp6 (= ${binary:Version})
-Multi-Arch: same
-Description: X11 authorisation library (debug package)
- This package provides the main interface to the X11 display manager control
- protocol library, which allows for remote logins to display managers.
- .
- This package contains the debug versions of the library found in libxdmcp6.
- Non-developers likely have little use for this package.
- .
- More information about X.Org can be found at:
- <URL:http://www.X.org>
- .
- This module can be found at
- git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
-
 Package: libxdmcp-dev
 Architecture: any
 Multi-Arch: same
 Section: libdevel
-Depends: ${shlibs:Depends}, ${misc:Depends}, libxdmcp6 (= ${binary:Version}), x11proto-core-dev
+Depends: ${shlibs:Depends}, ${misc:Depends}, libxdmcp6 (= ${binary:Version}), x11proto-dev
 Description: X11 authorisation library (development headers)
  This package provides the main interface to the X11 display manager control
  protocol library, which allows for remote logins to display managers.
@@ -79,4 +60,4 @@ Description: X11 authorisation library (development headers)
  <URL:http://www.X.org>
  .
  This module can be found at
- git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
+ https://gitlab.freedesktop.org/xorg/lib/libXdmcp

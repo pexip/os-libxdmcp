@@ -1,3 +1,16 @@
+libxdmcp (1:1.1.5-1) unstable; urgency=medium
+
+  [ Timo Aaltonen ]
+  * control: Migrate to x11proto-dev.
+
+  [ Julien Cristau ]
+  * control: update debian and upstream git URLs
+  * New upstream release.
+  * Replace libxdmcp6-dbg with automatic dbgsym package.
+  * Add debian/source/format.
+
+ -- Julien Cristau <jcristau@debian.org>  Tue, 19 Nov 2024 12:52:56 +0100
+
 libxdmcp (1:1.1.2-3) unstable; urgency=medium
 
   * Merge 1:1.1.2-1.1 NMU, lost by mistake in 1:1.1.2-2.
